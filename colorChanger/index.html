@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #212121;
+      }
+
+      .container {
+        text-align: center;
+      }
+
+      h1 {
+        color: white;
+        margin-bottom: 30px;
+      }
+
+      .color-container {
+        display: flex;
+        gap: 20px;
+      }
+
+      .button {
+        width: 120px;
+        height: 120px;
+        border: 3px solid black;
+        cursor: pointer;
+        border-radius: 10px;
+        transition: transform 0.2s ease;
+      }
+
+      .button:hover {
+        transform: scale(1.05);
+      }
+
+      #grey {
+        background-color: grey;
+      }
+
+      #white {
+        background-color: white;
+      }
+
+      #blue {
+        background-color: blue;
+      }
+
+      #yellow {
+        background-color: yellow;
+      }
+    </style>
+  </head>
+  <body style="background-color: black; color: aliceblue">
+    <div class="container">
+      <h1>Color Scheme Switcher</h1>
+
+      <div class="color-container">
+        <div class="button" id="grey"></div>
+
+        <div class="button" id="white"></div>
+
+        <div class="button" id="blue"></div>
+
+        <div class="button" id="yellow"></div>
+      </div>
+      <br />
+      <h3>
+        Try Clicking on the above colors to change the background color of this
+        page
+      </h3>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
